@@ -355,7 +355,7 @@ export default function OfficeSuite() {
             Bộ ứng dụng văn phòng quen thuộc.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Zoho Workplace không chỉ cung cấp Email doanh nghiệp mà còn mang đến bộ công cụ soạn thảo, bảng tính và trình chiếu cộng tác theo thời gian thực.
+            Zoho Workplace mang đến bộ công cụ văn phòng quen thuộc, giúp đội ngũ cộng tác trên cùng một nền tảng, giảm sự phân tán và nâng cao hiệu quả làm việc mỗi ngày.
           </p>
         </div>
 
