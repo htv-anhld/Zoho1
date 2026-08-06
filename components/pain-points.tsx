@@ -34,7 +34,7 @@ export default function PainPoints() {
         {/* Header */}
         <div className="text-center mb-16 md:mb-20 animate-fade-up">
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-            <span className="text-sm font-semibold text-primary">PAIN POINT</span>
+            <span className="text-sm font-semibold text-primary">WHY CHANGE?</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading text-balance">
             Doanh nghiệp của bạn có đang gặp những vấn đề này?
