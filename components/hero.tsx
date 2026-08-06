@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { CheckCircle2 } from 'lucide-react'
 import { CTAButton } from './cta-button'
 
 export default function Hero() {
@@ -42,16 +41,6 @@ export default function Hero() {
               >
                 Xem bảng so sánh chi phí
               </CTAButton>
-            </div>
-
-            {/* Trust Badge */}
-            <div className="flex justify-center md:justify-start pt-8 animate-fade-up">
-              <div className="inline-flex items-center gap-4 px-5 md:px-6 py-3 md:py-4 bg-white rounded-full shadow-md border border-border hover:shadow-lg transition-shadow">
-                <CheckCircle2 size={20} className="text-primary flex-shrink-0" />
-                <span className="text-sm md:text-base text-foreground font-medium">
-                  <span className="font-bold text-primary">100+</span> doanh nghiệp Việt Nam tin dùng Zoho Workplace
-                </span>
-              </div>
             </div>
           </div>
 
