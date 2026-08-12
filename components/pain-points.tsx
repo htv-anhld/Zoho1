@@ -25,8 +25,8 @@ const painPoints: {
   },
   {
     icon: ShieldCheck,
-    title: 'Thiếu người đồng hành triển khai',
-    desc: 'Mua bản quyền thì dễ, nhưng triển khai và vận hành mới là thách thức.',
+    title: 'Rủi ro từ phần mềm không bản quyền',
+    desc: 'Sử dụng phần mềm không bản quyền khiến doanh nghiệp đối mặt với rủi ro pháp lý và thiếu minh bạch trong quản lý license.',
   },
 ]
 
