@@ -22,7 +22,7 @@ export default function Hero() {
                 <span className="text-primary">Cắt giảm 50%</span> Chi phí Email & Văn phòng Doanh nghiệp
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Giải pháp thay thế Google Workspace và Microsoft 365. Connecta hỗ trợ chuyển đổi dữ liệu miễn phí 1-1.
+                Giảm đáng kể chi phí bản quyền mỗi năm, đồng thời sở hữu đầy đủ công cụ Email, Văn phòng và Cộng tác cho doanh nghiệp.
               </p>
             </div>
 
