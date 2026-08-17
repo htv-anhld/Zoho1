@@ -7,7 +7,6 @@ import { CTAButton } from './cta-button'
 
 const benefits = [
   { text: 'Phản hồi trong 30 phút' },
-  { text: 'Migration miễn phí' },
   { text: 'Hỗ trợ triển khai tiếng Việt' },
 ]
 
@@ -179,7 +178,7 @@ export default function LeadForm() {
                     variant="primary"
                     type="submit"
                     fullWidth
-                    trustText={['Phản hồi trong 30 phút', 'Migration miễn phí', 'Hỗ trợ triển khai tiếng Việt']}
+                    trustText={['Phản hồi trong 30 phút', 'Hỗ trợ triển khai tiếng Việt']}
                   >
                     Nhận Báo Giá & Dùng Thử Miễn Phí
                   </CTAButton>
