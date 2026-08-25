@@ -65,8 +65,8 @@ export default function Header() {
 
           {/* CTA Buttons - Desktop */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:1234567890" className="text-sm text-primary font-medium hover:text-primary/80 transition-colors">
-              Hotline
+            <a href="tel:+842544862888" className="text-sm text-primary font-medium hover:text-primary/80 transition-colors">
+              Hotline: 084 486 2888
             </a>
             <a
               href="#lead-form"
@@ -115,8 +115,8 @@ export default function Header() {
                 Tại sao Connecta
               </a>
               <div className="flex flex-col gap-2 pt-2 border-t border-border">
-                <a href="tel:1234567890" className="text-sm text-primary font-medium py-2">
-                  Hotline
+                <a href="tel:+842544862888" className="text-sm text-primary font-medium py-2">
+                  Hotline: 084 486 2888
                 </a>
                 <a
                   href="#lead-form"

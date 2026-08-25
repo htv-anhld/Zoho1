@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Globe } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -60,16 +60,20 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-4">Liên hệ</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
-                <Mail size={20} />
-                <a href="mailto:info@connecta.vn">info@connecta.vn</a>
+                <Phone size={20} />
+                <a href="tel:+842544862888">084 486 2888 (Hotline/Zalo · 24/7)</a>
               </div>
               <div className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
-                <Phone size={20} />
-                <a href="tel:+84888888888">+84 (0) 888 888 888</a>
+                <Mail size={20} />
+                <a href="mailto:sales@connecta.vn">sales@connecta.vn</a>
+              </div>
+              <div className="flex items-center gap-3 text-white/70 hover:text-white transition-colors">
+                <Globe size={20} />
+                <a href="https://connecta.vn" target="_blank" rel="noopener noreferrer">connecta.vn</a>
               </div>
               <div className="flex items-start gap-3 text-white/70">
                 <MapPin size={20} className="mt-1 flex-shrink-0" />
-                <span>Hà Nội, Việt Nam</span>
+                <span>Lê Thanh Nghị, Hà Nội, Việt Nam</span>
               </div>
             </div>
           </div>

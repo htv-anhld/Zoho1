@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="space-y-8 animate-fade-up">
             <div>
               <h1 className="font-bold text-4xl md:text-6xl leading-tight tracking-tight text-foreground mb-4">
-                <span className="text-primary">Cắt giảm 50%</span> Chi phí Email & Văn phòng Doanh nghiệp
+                <span className="text-primary">Cắt giảm 50%</span> chi phí Email & Văn Phòng Doanh nghiệp với Zoho Workplace
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Giảm đáng kể chi phí bản quyền mỗi năm, đồng thời sở hữu đầy đủ công cụ Email, Văn phòng và Cộng tác cho doanh nghiệp.
