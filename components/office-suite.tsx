@@ -442,7 +442,6 @@ export default function OfficeSuite() {
               <div className="flex gap-3 items-start">
                 <Sparkles size={24} className="text-primary flex-shrink-0 mt-0.5" />
                 <div className="space-y-2 text-sm">
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Không cần cài Microsoft Office</p>
                   <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Làm việc trên mọi thiết bị</p>
                   <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Cộng tác theo thời gian thực</p>
                   <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Tự động lưu trên Cloud</p>
