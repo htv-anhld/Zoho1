@@ -17,6 +17,9 @@ export default function WhatIsZoho() {
           <h2 className="font-heading text-4xl md:text-5xl font-bold leading-tight tracking-tight text-foreground text-balance">
             Zoho Workplace là gì?
           </h2>
+          <p className="mt-5 text-lg md:text-xl leading-relaxed text-muted-foreground text-pretty">
+            Bộ email và văn phòng trọn gói cho doanh nghiệp, thay thế Google Workspace và Microsoft 365
+          </p>
         </div>
 
         {/* Two-column: image left, text right */}
@@ -48,10 +51,7 @@ export default function WhatIsZoho() {
           {/* Text */}
           <div className="animate-fade-up" style={{ animationDelay: '120ms' }}>
             <p className="text-base md:text-lg leading-relaxed text-muted-foreground text-pretty">
-              <strong className="font-bold text-foreground">Zoho Workplace</strong> là một bộ ứng dụng All-in-one hoạt động dựa trên nền tảng đám mây với đầy đủ các công cụ cần thiết cho một tổ chức hoạt động và làm việc. Được xếp trong Top 3 các giải pháp chuyển đổi số cho doanh nghiệp vừa và nhỏ, Zoho Workplace hiện đã có hơn 16 triệu người dùng trên toàn cầu và đang có cơ hội phát triển lớn trong thời gian tới.
-            </p>
-            <p className="mt-6 text-base md:text-lg leading-relaxed text-muted-foreground text-pretty">
-              Là giải pháp chủ lực của Zoho, Zoho Workplace mang đến một không gian làm việc trực tuyến tiện lợi, cho phép người dùng có thể thoải mái làm việc mọi lúc mọi nơi, gặp gỡ và giao tiếp hiệu quả với đối tác, từ đó tăng hiệu quả công việc và đạt được mục tiêu đặt ra.
+              <strong className="font-bold text-foreground">Zoho Workplace</strong> là bộ ứng dụng làm việc dành cho doanh nghiệp, do hãng phần mềm Zoho phát triển. Mỗi nhân viên có một tài khoản duy nhất, gồm email theo tên miền công ty, bộ soạn thảo văn bản – bảng tính – trình chiếu, chat nội bộ, họp trực tuyến và kho tài liệu chung. Cách dùng gần như giống hệt Google Workspace hoặc Microsoft 365, nhưng chi phí thấp hơn đáng kể.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <CTAButton href="#features" variant="secondary">
