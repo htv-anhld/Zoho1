@@ -20,14 +20,14 @@ export default function Hero() {
             <div>
               <div className="mb-5 inline-flex items-center rounded-full border border-primary/15 bg-primary/5 px-4 py-2">
                 <span className="text-xs font-semibold tracking-[0.12em] text-primary uppercase">
-                  Zoho Workplace — Đối tác triển khai chính thức tại Việt Nam
+                  Connecta - Đối tác chính thức Tại Việt Nam
                 </span>
               </div>
               <h1 className="font-bold text-4xl md:text-6xl leading-tight tracking-tight text-foreground mb-4 text-balance">
                 Email doanh nghiệp và bộ công cụ làm việc trong <span className="text-primary">một nền tảng</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
-                Zoho Workplace — bộ email và ứng dụng văn phòng cho doanh nghiệp. Connecta triển khai trọn gói tại Việt Nam.
+<strong className="font-bold text-foreground">Zoho Workplace</strong> — bộ email và ứng dụng văn phòng cho doanh nghiệp. Connecta triển khai trọn gói tại Việt Nam.
               </p>
             </div>
 
