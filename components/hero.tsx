@@ -18,11 +18,16 @@ export default function Hero() {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-up">
             <div>
-              <h1 className="font-bold text-4xl md:text-6xl leading-tight tracking-tight text-foreground mb-4">
-                <span className="text-primary">Cắt giảm 50%</span> chi phí Email & Văn Phòng Doanh nghiệp với Zoho Workplace
+              <div className="mb-5 inline-flex items-center rounded-full border border-primary/15 bg-primary/5 px-4 py-2">
+                <span className="text-xs font-semibold tracking-[0.12em] text-primary uppercase">
+                  Connecta - Đối tác chính thức Tại Việt Nam
+                </span>
+              </div>
+              <h1 className="font-bold text-4xl md:text-6xl leading-tight tracking-tight text-foreground mb-4 text-balance">
+<span className="text-primary">Tiết kiệm hơn</span> với bộ công cụ làm việc toàn diện cho doanh nghiệp
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Giảm đáng kể chi phí bản quyền mỗi năm, đồng thời sở hữu đầy đủ công cụ Email, Văn phòng và Cộng tác cho doanh nghiệp.
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
+<strong className="font-bold text-foreground">Zoho Workplace</strong> — bộ email và ứng dụng văn phòng cho doanh nghiệp. Connecta triển khai trọn gói tại Việt Nam.
               </p>
             </div>
 
@@ -31,17 +36,25 @@ export default function Hero() {
               <CTAButton
                 href="#lead-form"
                 variant="primary"
-                trustText={['Miễn phí tư vấn', 'Phản hồi trong 30 phút', 'Hỗ trợ triển khai']}
               >
                 Nhận Báo Giá & Dùng Thử Miễn Phí
               </CTAButton>
               <CTAButton
-                href="#comparison"
+                href="#bang-gia"
                 variant="secondary"
               >
-                Xem bảng so sánh chi phí
+                Xem bảng giá
               </CTAButton>
             </div>
+
+            {/* Three trust sub-lines */}
+            <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
+              <span>Bản quyền Zoho Workplace</span>
+              <span className="text-primary/40">•</span>
+              <span>Triển khai &amp; chuyển dữ liệu</span>
+              <span className="text-primary/40">•</span>
+              <span>Hỗ trợ và gia hạn tại Việt Nam</span>
+            </p>
           </div>
 
           {/* Right - Dashboard Mockup */}

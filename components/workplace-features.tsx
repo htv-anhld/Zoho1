@@ -2,6 +2,7 @@
 
 import { Mail, MessageCircle, FolderOpen, FileText, Video, Users, MonitorSmartphone, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface ProductContent {
   tagline: string
@@ -138,7 +139,7 @@ const EcosystemVisualization = () => {
   const activeProduct = hoveredNode ? appNodes.find(n => n.id === hoveredNode) : null
 
   return (
-    <section className="py-24 md:py-32 bg-white overflow-hidden">
+    <section id="features" className="py-24 md:py-32 bg-white overflow-hidden">
       {/* Subtle radial gradient background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-radial from-secondary/10 via-transparent to-transparent opacity-40" />
@@ -147,12 +148,12 @@ const EcosystemVisualization = () => {
       <div className="container px-4 md:px-6 relative">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-up">
-          <span className="text-xs font-bold text-primary uppercase tracking-widest">ZOHO WORKPLACE ECOSYSTEM</span>
+          <span className="text-xs font-bold text-primary uppercase tracking-widest">CÁC ỨNG DỤNG TRONG ZOHO WORKPLACE</span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mt-4 mb-6 leading-tight max-w-3xl mx-auto">
-            Một nền tảng. Mọi công cụ doanh nghiệp.
+            Zoho Workplace gồm những ứng dụng nào?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Zoho Workplace kết nối Email, Chat, Lưu trữ, Văn phòng, Họp trực tuyến và Cộng tác trên cùng một hệ sinh thái thống nhất.
+            Di chuột vào từng ứng dụng để xem ứng dụng đó làm gì và mang lại lợi ích gì cho doanh nghiệp của bạn.
           </p>
         </div>
 
@@ -247,39 +248,21 @@ const EcosystemVisualization = () => {
                     </>
                   ) : (
                     <>
-                      {/* Default Dashboard View */}
-                      <div className="flex items-center gap-2 mb-3">
-                        <div className="flex gap-1">
-                          <div className="w-2 h-2 rounded-full bg-red-400" />
-                          <div className="w-2 h-2 rounded-full bg-yellow-400" />
-                          <div className="w-2 h-2 rounded-full bg-green-400" />
-                        </div>
-                      </div>
-
-                      <div className="space-y-2">
-                        <div className="flex items-center justify-between">
-                          <div className="w-16 h-1.5 bg-gradient-to-r from-primary/40 to-primary/10 rounded" />
-                          <div className="w-6 h-6 rounded-lg bg-primary/10 border border-primary/20" />
-                        </div>
-
-                        <div className="space-y-1">
-                          <div className="w-24 h-1.5 bg-primary/20 rounded" />
-                          <div className="w-20 h-1 bg-primary/10 rounded" />
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-1.5">
-                          <div className="w-full h-8 bg-gradient-to-br from-secondary/10 to-transparent border border-secondary/20 rounded-lg" />
-                          <div className="w-full h-8 bg-gradient-to-br from-secondary/10 to-transparent border border-secondary/20 rounded-lg" />
-                        </div>
-
-                        <div className="flex gap-1 pt-1.5">
-                          <div className="flex-1 h-0.5 bg-primary/10 rounded" />
-                          <div className="flex-1 h-0.5 bg-secondary/10 rounded" />
-                        </div>
-                      </div>
-
-                      <div className="text-center text-xs text-muted-foreground italic mt-3">
-                        Di chuột vào ứng dụng để khám phá chi tiết
+                      {/* Default View - Zoho Workplace logo */}
+                      <div className="flex flex-col items-center justify-center py-6">
+                        <Image
+                          src="/zoho-logo.png"
+                          alt="Zoho Workplace"
+                          width={160}
+                          height={64}
+                          className="h-14 w-auto object-contain"
+                          style={{ width: 'auto', height: '3.5rem' }}
+                        />
+                        <p className="mt-4 text-sm font-bold text-foreground">Zoho Workplace</p>
+                        <div className="mt-1 h-px w-16 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+                        <p className="mt-3 text-center text-xs text-muted-foreground italic">
+                          Di chuột vào ứng dụng để khám phá chi tiết
+                        </p>
                       </div>
                     </>
                   )}
@@ -355,15 +338,6 @@ const EcosystemVisualization = () => {
 
         {/* Bottom CTA Section */}
         <div className="bg-primary rounded-3xl p-12 md:p-16 text-white max-w-4xl mx-auto">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tất cả công cụ doanh nghiệp trên một nền tảng duy nhất.
-            </h3>
-            <p className="text-lg text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Không cần quản lý nhiều phần mềm riêng lẻ. Zoho Workplace giúp doanh nghiệp làm việc hiệu quả hơn với một hệ sinh thái đồng bộ, bảo mật và tiết kiệm chi phí.
-            </p>
-          </div>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#lead-form"
@@ -373,7 +347,7 @@ const EcosystemVisualization = () => {
               <ArrowRight size={18} strokeWidth={2.25} className="transition-transform duration-300 ease-out group-hover:translate-x-1" />
             </a>
             <a
-              href="#comparison"
+              href="#bang-gia"
               className="group inline-flex items-center justify-center gap-2 h-12 sm:h-[50px] lg:h-[52px] px-5 sm:px-[22px] lg:px-7 min-w-[220px] max-w-[320px] rounded-[14px] font-heading font-semibold text-[15px] lg:text-base tracking-[-0.2px] leading-none border border-white/40 text-white transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-white/10 active:scale-[0.98] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
             >
               Xem bảng giá

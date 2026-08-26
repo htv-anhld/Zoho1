@@ -349,13 +349,13 @@ export default function OfficeSuite() {
         {/* Header */}
         <div className="text-center mb-16 md:mb-24 animate-fade-up">
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-            <span className="text-sm font-semibold text-primary">ZOHO OFFICE SUITE</span>
+            <span className="text-sm font-semibold text-primary">CHUYỂN ĐỔI CÓ KHÓ KHÔNG</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading">
             Bộ ứng dụng văn phòng quen thuộc.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Zoho Workplace mang đến bộ công cụ văn phòng quen thuộc, giúp đội ngũ cộng tác trên cùng một nền tảng, giảm sự phân tán và nâng cao hiệu quả làm việc mỗi ngày.
+            Giao diện và thao tác gần như giống Word, Excel, PowerPoint. Phần lớn nhân viên dùng được ngay trong buổi đầu tiên.
           </p>
         </div>
 
@@ -452,10 +452,10 @@ export default function OfficeSuite() {
             {/* CTA Button */}
             <div className="mt-6">
               <CTAButton
-                href="#comparison"
+                href="#bang-gia"
                 variant="primary"
               >
-                Khám phá Zoho Office Suite
+                Xem chi phí từng gói
               </CTAButton>
             </div>
           </div>
