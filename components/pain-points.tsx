@@ -101,7 +101,7 @@ export default function PainPoints() {
         >
           <div className="mb-5 inline-flex items-center rounded-full border border-primary/15 bg-white/60 px-4 py-2 shadow-sm backdrop-blur-md">
             <span className="text-xs font-semibold tracking-[0.18em] text-primary">
-              WHY CHANGE?
+              TẠI SAO DOANH NGHIỆP CẦN THAY ĐỔI?
             </span>
           </div>
           <h2 className="mb-6 font-heading text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-[3.25rem] text-balance">

@@ -52,7 +52,7 @@ export default function WhoIsZohoFor() {
         {/* Header */}
         <div className="text-center mb-16 md:mb-20 animate-fade-up">
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
-            <span className="text-sm font-semibold text-primary">WHO SHOULD USE ZOHO WORKPLACE</span>
+            <span className="text-sm font-semibold text-primary">DOANH NGHIỆP NÀO NÊN SỬ DỤNG ZOHO WORKPLACE?</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading">
             Zoho Workplace phù hợp với doanh nghiệp nào?
@@ -124,7 +124,7 @@ export default function WhoIsZohoFor() {
                 <ArrowRight size={18} strokeWidth={2.25} className="transition-transform duration-300 ease-out group-hover:translate-x-1" />
               </a>
               <a
-                href="#comparison"
+                href="#bang-gia"
                 className="group inline-flex items-center justify-center gap-2 h-12 sm:h-[50px] lg:h-[52px] px-5 sm:px-[22px] lg:px-7 min-w-[220px] rounded-[14px] whitespace-nowrap font-heading font-semibold text-[15px] lg:text-base tracking-[-0.2px] leading-none border border-white/40 text-white transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-white/10 active:scale-[0.98] active:translate-y-0 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/30"
               >
                 Xem bảng giá
