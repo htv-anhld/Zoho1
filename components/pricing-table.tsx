@@ -110,19 +110,19 @@ export default function PricingTable() {
         </div>
 
         {/* Plan cards */}
-        <div className="grid gap-6 lg:grid-cols-3 items-start">
+        <div className="grid gap-6 lg:gap-8 lg:grid-cols-3 items-stretch pt-5 lg:pt-6">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative flex flex-col rounded-3xl border bg-white p-7 md:p-8 transition-all duration-300 animate-fade-up ${
+              className={`group relative flex flex-col rounded-3xl border p-7 md:p-8 transition-all duration-300 animate-fade-up ${
                 plan.highlighted
-                  ? 'border-primary shadow-[0_28px_60px_-24px_rgba(55,75,107,0.5)] lg:-mt-4 lg:mb-4 ring-1 ring-primary/20'
-                  : 'border-border shadow-sm hover:-translate-y-1 hover:shadow-md'
+                  ? 'border-2 border-primary bg-gradient-to-b from-primary/[0.07] via-white to-white shadow-[0_36px_70px_-28px_rgba(55,75,107,0.6)] ring-1 ring-primary/15 lg:scale-[1.045] lg:z-10'
+                  : 'border-border bg-white shadow-sm hover:-translate-y-1.5 hover:border-primary/30 hover:shadow-xl'
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-md">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-lg ring-4 ring-white">
                     <Star size={13} className="fill-white" />
                     {plan.label}
                   </span>
@@ -130,17 +130,15 @@ export default function PricingTable() {
               )}
 
               {/* Plan head */}
-              <div className="mb-6 border-b border-border pb-6">
-                {!plan.highlighted && (
-                  <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                    {plan.label}
-                  </p>
-                )}
-                <h3 className="font-heading text-2xl font-bold text-foreground">
+              <div className={`mb-6 border-b pb-6 ${plan.highlighted ? 'border-primary/20' : 'border-border'}`}>
+                <p className={`mb-1 flex min-h-4 items-center text-xs font-semibold uppercase tracking-wide ${plan.highlighted ? 'text-primary' : 'text-muted-foreground'}`}>
+                  {plan.highlighted ? 'Gói được chọn nhiều nhất' : plan.label}
+                </p>
+                <h3 className={`font-heading font-bold text-foreground ${plan.highlighted ? 'text-[1.7rem] leading-tight' : 'text-2xl'}`}>
                   {plan.name}
                 </h3>
                 <div className="mt-4 flex items-baseline gap-1.5">
-                  <span className="font-heading text-3xl font-bold text-primary">
+                  <span className={`font-heading font-bold text-primary ${plan.highlighted ? 'text-4xl' : 'text-3xl'}`}>
                     {plan.price}
                   </span>
                   <span className="text-sm text-muted-foreground">đ / người / tháng</span>
