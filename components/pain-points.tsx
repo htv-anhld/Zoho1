@@ -9,6 +9,11 @@ const painPoints: {
   desc: string
 }[] = [
   {
+    icon: ShieldCheck,
+    title: 'Rủi ro từ phần mềm không bản quyền',
+    desc: 'Sử dụng phần mềm không bản quyền khiến doanh nghiệp đối mặt với rủi ro pháp lý và thiếu minh bạch trong quản lý license.',
+  },
+  {
     icon: Coins,
     title: 'Chi phí phần mềm ngày càng tăng',
     desc: 'Trả phí cho nhiều công cụ nhưng chưa khai thác hết giá trị.',
@@ -22,11 +27,6 @@ const painPoints: {
     icon: Users,
     title: 'Làm việc nhóm thiếu đồng bộ',
     desc: 'Nhiều phiên bản tài liệu, khó cộng tác và dễ bỏ sót thông tin.',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Rủi ro từ phần mềm không bản quyền',
-    desc: 'Sử dụng phần mềm không bản quyền khiến doanh nghiệp đối mặt với rủi ro pháp lý và thiếu minh bạch trong quản lý license.',
   },
 ]
 

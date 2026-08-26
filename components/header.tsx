@@ -52,11 +52,14 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#comparison" className="text-sm text-foreground hover:text-primary transition-colors">
-              So sánh chi phí
+            <a href="#zoho-workplace-la-gi" className="text-sm text-foreground hover:text-primary transition-colors">
+              Zoho Workplace là gì
             </a>
             <a href="#features" className="text-sm text-foreground hover:text-primary transition-colors">
-              Tính năng
+              Ứng dụng
+            </a>
+            <a href="#bang-gia" className="text-sm text-foreground hover:text-primary transition-colors">
+              Bảng giá
             </a>
             <a href="#why-connecta" className="text-sm text-foreground hover:text-primary transition-colors">
               Tại sao Connecta
@@ -94,18 +97,25 @@ export default function Header() {
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col gap-3">
               <a
-                href="#comparison"
+                href="#zoho-workplace-la-gi"
                 className="text-sm text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
-                So sánh chi phí
+                Zoho Workplace là gì
               </a>
               <a
                 href="#features"
                 className="text-sm text-foreground hover:text-primary transition-colors py-2"
                 onClick={() => setIsOpen(false)}
               >
-                Tính năng
+                Ứng dụng
+              </a>
+              <a
+                href="#bang-gia"
+                className="text-sm text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Bảng giá
               </a>
               <a
                 href="#why-connecta"

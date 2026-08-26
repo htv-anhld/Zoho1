@@ -1,6 +1,6 @@
 'use client'
 
-import { Check, X, Users, Clock, Shield, ArrowRight, Circle } from 'lucide-react'
+import { Check, X, ArrowRight } from 'lucide-react'
 
 interface ComparisonRow {
   criterion: string
@@ -41,27 +41,6 @@ const comparisonRows: ComparisonRow[] = [
   },
 ]
 
-const trustMetrics = [
-  {
-    number: '100+',
-    title: 'Doanh nghiệp triển khai',
-    description: 'Tin tưởng lựa chọn Connecta',
-    icon: Users,
-  },
-  {
-    number: '24/7',
-    title: 'Hỗ trợ kỹ thuật',
-    description: 'Đội ngũ kỹ thuật tại Việt Nam',
-    icon: Clock,
-  },
-  {
-    number: '100%',
-    title: 'Migration an toàn',
-    description: 'Không mất dữ liệu khi chuyển đổi',
-    icon: Shield,
-  },
-]
-
 const journeySteps = [
   'Khảo sát nhu cầu',
   'Triển khai & Migration',
@@ -76,7 +55,7 @@ export default function WhyConnecta() {
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Section Header */}
         <div className="text-center mb-20 animate-fade-up">
-          <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">CONNECTA ADVANTAGES</p>
+          <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">LỢI THẾ KHI CHỌN CONNECTA</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading leading-tight">
             Không chỉ bán bản quyền.
             <br />
@@ -118,28 +97,6 @@ export default function WhyConnecta() {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Trust Metrics */}
-        <div className="grid md:grid-cols-3 gap-6 mb-24 animate-fade-up">
-          {trustMetrics.map((metric, idx) => {
-            const IconComponent = metric.icon
-            return (
-              <div
-                key={idx}
-                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 bg-primary/10 rounded-xl">
-                    <IconComponent size={24} className="text-primary" />
-                  </div>
-                </div>
-                <div className="text-4xl font-bold text-primary mb-2 font-heading">{metric.number}</div>
-                <div className="font-bold text-foreground mb-1">{metric.title}</div>
-                <div className="text-sm text-muted-foreground">{metric.description}</div>
-              </div>
-            )
-          })}
         </div>
 
         {/* Customer Journey Timeline */}
