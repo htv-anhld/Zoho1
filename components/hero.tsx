@@ -24,7 +24,7 @@ export default function Hero() {
                 </span>
               </div>
               <h1 className="font-bold text-4xl md:text-6xl leading-tight tracking-tight text-foreground mb-4 text-balance">
-                Email doanh nghiệp và bộ công cụ làm việc trong <span className="text-primary">một nền tảng</span>
+<span className="text-primary">Tiết kiệm hơn</span> với bộ công cụ làm việc toàn diện cho doanh nghiệp
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
 <strong className="font-bold text-foreground">Zoho Workplace</strong> — bộ email và ứng dụng văn phòng cho doanh nghiệp. Connecta triển khai trọn gói tại Việt Nam.
