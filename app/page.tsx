@@ -8,6 +8,7 @@ import PricingTable from '@/components/pricing-table'
 import ComparisonTable from '@/components/comparison-table'
 import WhyConnecta from '@/components/why-connecta'
 import WhoIsZohoFor from '@/components/who-is-zoho-for'
+import WhoIsConnecta from '@/components/who-is-connecta'
 import LeadForm from '@/components/lead-form'
 import Footer from '@/components/footer'
 
@@ -24,6 +25,7 @@ export default function Home() {
       <ComparisonTable />
       <WhyConnecta />
       <WhoIsZohoFor />
+      <WhoIsConnecta />
       <LeadForm />
       <Footer />
     </main>
