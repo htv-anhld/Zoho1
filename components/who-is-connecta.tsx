@@ -1,3 +1,5 @@
+import { CTAButton } from '@/components/cta-button'
+
 export default function WhoIsConnecta() {
   return (
     <section id="connecta-la-ai" className="py-20 md:py-32 bg-muted/30">
@@ -36,6 +38,12 @@ export default function WhoIsConnecta() {
                 <dd className="mt-1 text-sm text-muted-foreground">Năm kinh nghiệm</dd>
               </div>
             </dl>
+
+            <div className="mt-10">
+              <CTAButton href="#lead-form" variant="primary">
+                Liên hệ với Connecta
+              </CTAButton>
+            </div>
           </div>
 
           {/* Brand card */}
