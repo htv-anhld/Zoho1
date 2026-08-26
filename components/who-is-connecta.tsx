@@ -46,7 +46,7 @@ export default function WhoIsConnecta() {
             </div>
           </div>
 
-          {/* Brand card */}
+          {/* Image */}
           <div className="relative animate-fade-up" style={{ animationDelay: '120ms' }}>
             {/* Decorative floating squares */}
             <div
@@ -58,12 +58,23 @@ export default function WhoIsConnecta() {
               aria-hidden="true"
             />
 
-            <div className="relative flex aspect-[4/3] flex-col items-center justify-center rounded-[2rem] border border-border bg-gradient-to-br from-white to-muted/40 shadow-[0_30px_60px_-25px_rgba(55,75,107,0.35)]">
-              <div className="flex h-24 w-24 items-center justify-center rounded-3xl bg-primary shadow-lg">
-                <span className="font-heading text-5xl font-bold lowercase text-primary-foreground">c</span>
+            <div className="relative overflow-hidden rounded-[2rem] border border-border shadow-[0_30px_60px_-25px_rgba(55,75,107,0.35)]">
+              <img
+                src="/connecta-team.png"
+                alt="Đội ngũ Connecta Solutions đang làm việc tại văn phòng"
+                className="aspect-[4/3] w-full object-cover"
+              />
+
+              {/* Brand badge overlay */}
+              <div className="absolute bottom-4 left-4 flex items-center gap-3 rounded-2xl bg-white/90 px-4 py-3 shadow-lg backdrop-blur-sm">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary">
+                  <span className="font-heading text-2xl font-bold lowercase text-primary-foreground">c</span>
+                </div>
+                <div>
+                  <p className="font-heading text-sm font-bold leading-tight text-foreground">Connecta Solutions</p>
+                  <p className="text-xs text-muted-foreground">Digital Transformation Partner</p>
+                </div>
               </div>
-              <p className="mt-6 font-heading text-2xl font-bold text-foreground">Connecta Solutions</p>
-              <p className="mt-1 text-sm text-muted-foreground">Digital Transformation Partner</p>
             </div>
           </div>
         </div>
