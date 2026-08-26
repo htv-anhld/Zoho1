@@ -149,10 +149,11 @@ export default function PricingTable() {
               <dl className="flex-1 space-y-4">
                 {featureRows.map((row) => (
                   <div key={row.key}>
-                    <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    <dt className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-primary">
+                      <span className="inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                       {row.label}
                     </dt>
-                    <dd className="mt-1 text-sm leading-relaxed text-foreground text-pretty">
+                    <dd className="mt-1 pl-3.5 text-sm leading-relaxed text-foreground text-pretty">
                       <RowValue value={plan.rows[row.key]} />
                     </dd>
                   </div>
