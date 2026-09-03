@@ -5,7 +5,7 @@ import { CTAButton } from './cta-button'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-12 md:pt-0 overflow-hidden">
+    <section className="relative flex items-center justify-center overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/10 -z-10" />
       
@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-secondary/20 rounded-full blur-3xl -z-10 opacity-50" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 opacity-30" />
 
-      <div className="container mx-auto px-4 py-16 md:py-32">
+      <div className="container mx-auto px-4 py-14 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-up">
@@ -81,16 +81,6 @@ export default function Hero() {
               <div className="text-lg md:text-2xl font-bold text-foreground">Chat & Họp</div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="flex flex-col items-center gap-2 text-primary">
-          <span className="text-xs font-medium">Cuộn để xem thêm</span>
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </div>
     </section>
