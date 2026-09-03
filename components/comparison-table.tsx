@@ -30,12 +30,11 @@ const comparisonData = [
 
 export default function ComparisonTable() {
   const [employees, setEmployees] = useState(50)
-  const [savings, setSavings] = useState(3000000)
+  const savings = employees * 1200000
 
   const handleEmployeeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value) || 0
     setEmployees(value)
-    setSavings(value * 1200000)
   }
 
   return (
