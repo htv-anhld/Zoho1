@@ -7,6 +7,7 @@ import {
   Table2,
   Presentation,
   Sparkles,
+  HardDrive,
   Share2,
   History,
   Users,
@@ -437,14 +438,20 @@ export default function OfficeSuite() {
               )
             })}
 
-            {/* Info Box */}
+            {/* Zoho WorkDrive Box */}
             <div className="bg-secondary/15 border border-secondary/30 rounded-2xl p-6 mt-8">
               <div className="flex gap-3 items-start">
-                <Sparkles size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                <div className="space-y-2 text-sm">
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Làm việc trên mọi thiết bị</p>
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Cộng tác theo thời gian thực</p>
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Tự động lưu trên Cloud</p>
+                <HardDrive size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-foreground">Zoho WorkDrive</p>
+                  <p className="text-sm text-muted-foreground mt-0.5 mb-3">
+                    Kho lưu trữ và cộng tác tài liệu chung cho cả nhóm.
+                  </p>
+                  <div className="space-y-2 text-sm">
+                    <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Làm việc trên mọi thiết bị</p>
+                    <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Cộng tác theo thời gian thực</p>
+                    <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Tự động lưu trên Cloud</p>
+                  </div>
                 </div>
               </div>
             </div>
