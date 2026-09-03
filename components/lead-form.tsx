@@ -62,7 +62,7 @@ export default function LeadForm() {
   }
 
   return (
-    <section id="lead-form" className="py-16 md:py-32">
+    <section id="lead-form" className="py-14 md:py-20">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Left - Illustration & Benefits */}

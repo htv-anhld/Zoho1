@@ -2,7 +2,7 @@ import { CTAButton } from '@/components/cta-button'
 
 export default function WhoIsConnecta() {
   return (
-    <section id="connecta-la-ai" className="py-20 md:py-32 bg-muted/30">
+    <section id="connecta-la-ai" className="py-14 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-16">
           {/* Text */}

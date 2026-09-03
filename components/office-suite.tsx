@@ -344,10 +344,10 @@ export default function OfficeSuite() {
   }
 
   return (
-    <section className="py-16 md:py-32 bg-white">
+    <section className="py-14 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-16 md:mb-24 animate-fade-up">
+        <div className="text-center mb-10 md:mb-14 animate-fade-up">
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
             <span className="text-sm font-semibold text-primary">CHUYỂN ĐỔI CÓ KHÓ KHÔNG</span>
           </div>

@@ -47,10 +47,10 @@ const scenarios = [
 
 export default function WhoIsZohoFor() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-14 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header */}
-        <div className="text-center mb-16 md:mb-20 animate-fade-up">
+        <div className="text-center mb-10 md:mb-14 animate-fade-up">
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
             <span className="text-sm font-semibold text-primary">DOANH NGHIỆP NÀO NÊN SỬ DỤNG ZOHO WORKPLACE?</span>
           </div>

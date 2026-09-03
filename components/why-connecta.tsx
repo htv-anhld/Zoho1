@@ -51,10 +51,10 @@ const journeySteps = [
 
 export default function WhyConnecta() {
   return (
-    <section id="why-connecta" className="py-28 md:py-32 bg-[#F8FAFC]">
+    <section id="why-connecta" className="py-14 md:py-20 bg-[#F8FAFC]">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Section Header */}
-        <div className="text-center mb-20 animate-fade-up">
+        <div className="text-center mb-12 animate-fade-up">
           <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">LỢI THẾ KHI CHỌN CONNECTA</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 font-heading leading-tight">
             Không chỉ bán bản quyền.
@@ -69,7 +69,7 @@ export default function WhyConnecta() {
         </div>
 
         {/* Comparison Table */}
-        <div className="mb-24 animate-fade-up">
+        <div className="mb-16 animate-fade-up">
           <div className="overflow-hidden rounded-2xl shadow-md">
             <div className="grid grid-cols-3 bg-white">
               {/* Header */}
