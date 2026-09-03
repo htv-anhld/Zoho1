@@ -51,11 +51,6 @@ export default function WhoIsZohoFor() {
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 animate-fade-up">
-          <img
-            src="/zoho-workplace-logo.png"
-            alt="Zoho Workplace"
-            className="mx-auto mb-6 h-11 md:h-14 w-auto"
-          />
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
             <span className="text-sm font-semibold text-primary">DOANH NGHIỆP NÀO NÊN SỬ DỤNG ZOHO WORKPLACE?</span>
           </div>

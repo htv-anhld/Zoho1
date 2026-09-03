@@ -96,11 +96,6 @@ export default function PricingTable() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-10 md:mb-14 animate-fade-up">
-          <img
-            src="/zoho-workplace-logo.png"
-            alt="Zoho Workplace"
-            className="mx-auto mb-6 h-11 md:h-14 w-auto"
-          />
           <div className="mb-5 inline-block rounded-full bg-primary/10 px-4 py-2">
             <span className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
               Bảng giá
