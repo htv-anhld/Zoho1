@@ -59,13 +59,13 @@ export default function Hero() {
 
           {/* Right - Real Zoho Workplace screenshot */}
           <div className="relative animate-fade-up-delay">
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-border bg-white">
+            <div className="group rounded-2xl overflow-hidden shadow-2xl border border-border bg-white cursor-zoom-in transition-shadow duration-500 hover:shadow-[0_35px_70px_-20px_rgba(55,75,107,0.5)]">
               <Image
                 src="/zoho-workplace-real.png"
                 alt="Giao diện thật của Zoho Workplace - Mail, Cliq, WorkDrive, Writer, Sheet"
                 width={1264}
                 height={812}
-                className="w-full h-auto"
+                className="w-full h-auto transition-transform duration-500 ease-out group-hover:scale-[1.18]"
                 priority
               />
             </div>
