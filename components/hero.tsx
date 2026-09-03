@@ -27,7 +27,7 @@ export default function Hero() {
 <span className="text-primary">Tiết kiệm hơn</span> với bộ công cụ làm việc toàn diện cho doanh nghiệp
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
-<strong className="font-bold text-foreground">Zoho Workplace</strong> — bộ ứng dụng văn phòng toàn diện dành cho doanh nghiệp. Connecta triển khai trọn gói và đồng hành cùng doanh nghiệp tại Việt Nam.
+<strong className="font-bold text-foreground">Zoho Workplace</strong> — bộ ứng dụng văn phòng cho doanh nghiệp. Connecta triển khai trọn gói tại Việt Nam: chuyển dữ liệu từ Google Workspace hoặc Microsoft 365, đào tạo người dùng, hỗ trợ bằng tiếng Việt, hóa đơn VAT đầy đủ.
               </p>
             </div>
 
