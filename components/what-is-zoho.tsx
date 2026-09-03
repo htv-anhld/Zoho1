@@ -40,8 +40,8 @@ export default function WhatIsZoho() {
               <Image
                 src="/zoho-workplace-dashboard.png"
                 alt="Giao diện bộ ứng dụng Zoho Workplace với Mail, Chat, Drive, lịch và ghi chú"
-                width={960}
-                height={640}
+                width={1200}
+                height={628}
                 className="h-auto w-full"
                 priority
               />
