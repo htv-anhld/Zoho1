@@ -439,21 +439,16 @@ export default function OfficeSuite() {
             })}
 
             {/* Zoho WorkDrive Box */}
-            <div className="bg-secondary/15 border border-secondary/30 rounded-2xl p-6 mt-8">
-              <div className="flex gap-3 items-start">
-                <HardDrive size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-bold text-foreground">Zoho WorkDrive</p>
-                  <p className="text-sm text-muted-foreground mt-0.5 mb-3">
-                    Kho lưu trữ và cộng tác tài liệu chung cho cả nhóm.
-                  </p>
-                  <div className="space-y-2 text-sm">
-                    <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Làm việc trên mọi thiết bị</p>
-                    <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Cộng tác theo thời gian thực</p>
-                    <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Tự động lưu trên Cloud</p>
-                  </div>
+            <div className="rounded-2xl border border-transparent p-4 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300">
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center">
+                  <HardDrive size={28} className="text-primary" />
                 </div>
+                <h3 className="text-xl font-bold text-foreground">Zoho WorkDrive</h3>
               </div>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                Kho lưu trữ và cộng tác tài liệu chung cho cả nhóm.
+              </p>
             </div>
 
             {/* CTA Button */}
