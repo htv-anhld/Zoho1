@@ -57,28 +57,17 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Right - Dashboard Mockup */}
+          {/* Right - Real Zoho Workplace screenshot */}
           <div className="relative animate-fade-up-delay">
-            <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-border bg-white">
               <Image
-                src="/dashboard-mockup.png"
-                alt="Zoho Workplace Dashboard - Mail, Cliq, WorkDrive"
-                fill
-                className="object-cover"
+                src="/zoho-workplace-real.png"
+                alt="Giao diện thật của Zoho Workplace - Mail, Cliq, WorkDrive, Writer, Sheet"
+                width={1264}
+                height={812}
+                className="w-full h-auto"
                 priority
               />
-              {/* Glassmorphism overlay effect */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent" />
-            </div>
-
-            {/* Floating cards */}
-            <div className="absolute -bottom-6 -left-6 md:-bottom-12 md:-left-12 bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-border">
-              <div className="text-xs md:text-sm font-semibold text-primary mb-1">Zoho Mail</div>
-              <div className="text-lg md:text-2xl font-bold text-foreground">Email bảo mật</div>
-            </div>
-            <div className="absolute -top-4 -right-4 md:-top-8 md:-right-8 bg-white rounded-2xl p-4 md:p-6 shadow-lg border border-border">
-              <div className="text-xs md:text-sm font-semibold text-primary mb-1">Zoho Cliq</div>
-              <div className="text-lg md:text-2xl font-bold text-foreground">Chat & Họp</div>
             </div>
           </div>
         </div>
