@@ -1,8 +1,6 @@
-import { CTAButton } from '@/components/cta-button'
-
 export default function WhoIsConnecta() {
   return (
-    <section id="connecta-la-ai" className="py-14 md:py-20 bg-muted/30">
+    <section id="connecta-la-ai" className="py-14 md:py-20 bg-gradient-to-br from-secondary/15 via-primary/[0.06] to-primary/15">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid items-center gap-12 md:grid-cols-2 lg:gap-16">
           {/* Text */}
@@ -38,12 +36,6 @@ export default function WhoIsConnecta() {
                 <dd className="mt-1 text-sm text-muted-foreground">Năm kinh nghiệm</dd>
               </div>
             </dl>
-
-            <div className="mt-10">
-              <CTAButton href="#lead-form" variant="primary">
-                Liên hệ với Connecta
-              </CTAButton>
-            </div>
           </div>
 
           {/* Image */}
