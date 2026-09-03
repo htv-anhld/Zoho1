@@ -61,7 +61,7 @@ export default function PainPoints() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden py-24 md:py-40"
+        className="relative overflow-hidden py-14 md:py-20"
       style={{
         background:
           'radial-gradient(120% 90% at 50% 0%, #FFFFFF 0%, #FAFBFC 55%, #F4F6F9 100%)',

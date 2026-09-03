@@ -30,19 +30,18 @@ const comparisonData = [
 
 export default function ComparisonTable() {
   const [employees, setEmployees] = useState(50)
-  const [savings, setSavings] = useState(3000000)
+  const savings = employees * 1200000
 
   const handleEmployeeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value) || 0
     setEmployees(value)
-    setSavings(value * 1200000)
   }
 
   return (
-    <section id="comparison" className="py-16 md:py-32 bg-gradient-to-b from-transparent via-secondary/5 to-transparent">
+    <section id="comparison" className="py-14 md:py-20 bg-gradient-to-b from-transparent via-secondary/5 to-transparent">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
+        <div className="text-center mb-10 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
             So sánh chi phí vận hành hàng năm
           </h2>

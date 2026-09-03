@@ -92,10 +92,10 @@ function RowValue({ value }: { value: string }) {
 
 export default function PricingTable() {
   return (
-    <section id="bang-gia" className="py-16 md:py-28 bg-white">
+    <section id="bang-gia" className="py-14 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
-        <div className="mx-auto max-w-3xl text-center mb-14 md:mb-20 animate-fade-up">
+        <div className="mx-auto max-w-3xl text-center mb-10 md:mb-14 animate-fade-up">
           <div className="mb-5 inline-block rounded-full bg-primary/10 px-4 py-2">
             <span className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
               Bảng giá

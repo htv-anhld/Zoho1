@@ -5,10 +5,10 @@ import { CTAButton } from './cta-button'
 
 export default function WhatIsZoho() {
   return (
-    <section id="zoho-workplace-la-gi" className="py-20 md:py-32 bg-white">
+    <section id="zoho-workplace-la-gi" className="py-14 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
-        <div className="mx-auto max-w-3xl text-center mb-14 md:mb-20 animate-fade-up">
+        <div className="mx-auto max-w-3xl text-center mb-10 md:mb-14 animate-fade-up">
           <div className="mb-5 inline-block rounded-full bg-primary/10 px-4 py-2">
             <span className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
               Tổng quan

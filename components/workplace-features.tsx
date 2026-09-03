@@ -139,7 +139,7 @@ const EcosystemVisualization = () => {
   const activeProduct = hoveredNode ? appNodes.find(n => n.id === hoveredNode) : null
 
   return (
-    <section id="features" className="py-24 md:py-32 bg-white overflow-hidden">
+    <section id="features" className="py-14 md:py-20 bg-white overflow-hidden">
       {/* Subtle radial gradient background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-radial from-secondary/10 via-transparent to-transparent opacity-40" />
@@ -147,7 +147,7 @@ const EcosystemVisualization = () => {
 
       <div className="container px-4 md:px-6 relative">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
+        <div className="text-center mb-10 animate-fade-up">
           <span className="text-xs font-bold text-primary uppercase tracking-widest">CÁC ỨNG DỤNG TRONG ZOHO WORKPLACE</span>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mt-4 mb-6 leading-tight max-w-3xl mx-auto">
             Zoho Workplace gồm những ứng dụng nào?

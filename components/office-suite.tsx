@@ -7,6 +7,7 @@ import {
   Table2,
   Presentation,
   Sparkles,
+  HardDrive,
   Share2,
   History,
   Users,
@@ -344,10 +345,10 @@ export default function OfficeSuite() {
   }
 
   return (
-    <section className="py-16 md:py-32 bg-white">
+    <section className="py-14 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-16 md:mb-24 animate-fade-up">
+        <div className="text-center mb-10 md:mb-14 animate-fade-up">
           <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-4">
             <span className="text-sm font-semibold text-primary">CHUYỂN ĐỔI CÓ KHÓ KHÔNG</span>
           </div>
@@ -437,16 +438,17 @@ export default function OfficeSuite() {
               )
             })}
 
-            {/* Info Box */}
-            <div className="bg-secondary/15 border border-secondary/30 rounded-2xl p-6 mt-8">
-              <div className="flex gap-3 items-start">
-                <Sparkles size={24} className="text-primary flex-shrink-0 mt-0.5" />
-                <div className="space-y-2 text-sm">
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Làm việc trên mọi thiết bị</p>
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Cộng tác theo thời gian thực</p>
-                  <p className="flex items-center gap-2 text-foreground"><span className="font-bold">✔</span> Tự động lưu trên Cloud</p>
+            {/* Zoho WorkDrive Box */}
+            <div className="rounded-2xl border border-transparent p-4 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300">
+              <div className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center">
+                  <HardDrive size={28} className="text-primary" />
                 </div>
+                <h3 className="text-xl font-bold text-foreground">Zoho WorkDrive</h3>
               </div>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                Kho lưu trữ và cộng tác tài liệu chung cho cả nhóm.
+              </p>
             </div>
 
             {/* CTA Button */}
