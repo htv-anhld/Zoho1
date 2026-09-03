@@ -107,17 +107,17 @@ export default function WhyConnecta() {
           <div className="flex items-center justify-between gap-4 overflow-x-auto pb-4">
             {journeySteps.map((step, idx) => (
               <div key={idx} className="flex items-center gap-4 flex-shrink-0">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mb-3">
+                <div className="group flex flex-col items-center cursor-default transition-transform duration-300 ease-out hover:-translate-y-1.5">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl md:text-3xl mb-4 shadow-md ring-4 ring-transparent transition-all duration-300 ease-out group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-xl group-hover:ring-secondary/25">
                     {idx + 1}
                   </div>
-                  <div className="text-sm font-semibold text-foreground text-center max-w-xs leading-tight">
+                  <div className="text-sm md:text-base font-semibold text-foreground text-center max-w-xs leading-tight transition-colors duration-300 group-hover:text-primary">
                     {step}
                   </div>
                 </div>
                 {idx < journeySteps.length - 1 && (
                   <div className="flex-shrink-0 hidden md:block">
-                    <ArrowRight size={24} className="text-primary/30" />
+                    <ArrowRight size={28} className="text-primary/30" />
                   </div>
                 )}
               </div>
