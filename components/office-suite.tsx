@@ -6,10 +6,7 @@ import {
   FileText,
   Table2,
   Presentation,
-  Sparkles,
   HardDrive,
-  Share2,
-  History,
   Users,
   BarChart3,
   LineChart,
@@ -75,93 +72,18 @@ function TrafficDots() {
   )
 }
 
-function Avatars({ names }: { names: string[] }) {
-  return (
-    <div className="flex -space-x-2">
-      {names.map((n, i) => (
-        <span
-          key={n}
-          className="flex h-6 w-6 items-center justify-center rounded-full border border-[#0e141d] text-[10px] font-semibold text-white"
-          style={{ backgroundColor: i % 2 === 0 ? '#374B6B' : '#A4B8CE' }}
-          title={n}
-        >
-          {n[0]}
-        </span>
-      ))}
-    </div>
-  )
-}
-
 /* ---------- STATE 1: Zoho Writer ---------- */
 
 function WriterPreview() {
   return (
-    <AppFrame>
-      {/* Top toolbar */}
-      <div className="flex items-center justify-between border-b border-white/10 bg-white/[0.03] px-4 py-2.5">
-        <div className="flex items-center gap-4">
-          <TrafficDots />
-          <div className="hidden items-center gap-3 text-[11px] text-slate-400 sm:flex">
-            <span>File</span>
-            <span>Edit</span>
-            <span>Insert</span>
-            <span>Format</span>
-            <Sparkles size={13} className="text-[#A4B8CE]" />
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="hidden rounded-full bg-[#374B6B] px-2.5 py-1 text-[10px] font-semibold text-white sm:inline">
-            3 collaborators online
-          </span>
-          <button className="rounded-md border border-white/15 bg-white/5 px-2.5 py-1 text-[10px] font-medium text-slate-200">
-            <Share2 size={12} className="mr-1 inline" />
-            Share
-          </button>
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#A4B8CE] text-[10px] font-bold text-[#0e141d]">
-            L
-          </span>
-        </div>
-      </div>
-
-      {/* Document area */}
-      <div className="relative flex-1 overflow-hidden px-5 py-4">
-        <div className="mx-auto max-w-md rounded-lg bg-white/[0.04] p-5 ring-1 ring-white/5">
-          <h4 className="text-base font-bold text-white">Business Proposal 2026</h4>
-          <div className="mt-3 h-2 w-3/4 rounded bg-white/15" />
-          <div className="mt-2 h-2 w-full rounded bg-white/10" />
-          <div className="mt-2 h-2 w-5/6 rounded bg-white/10" />
-          <div className="mt-4 text-[11px] font-semibold text-[#A4B8CE]">Overview</div>
-          <ul className="mt-2 space-y-1.5">
-            {['Market analysis', 'Revenue projections', 'Growth strategy'].map((t) => (
-              <li key={t} className="flex items-center gap-2 text-[11px] text-slate-300">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#374B6B]" />
-                {t}
-              </li>
-            ))}
-          </ul>
-          {/* Cursor + comment */}
-          <span className="mt-3 inline-block h-3 w-0.5 animate-pulse bg-[#A4B8CE] align-middle" />
-        </div>
-
-        {/* Status badge */}
-        <div className="absolute left-5 top-4 flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2 py-1 text-[10px] text-emerald-300">
-          <Circle size={7} className="fill-emerald-400 text-emerald-400" />
-          Auto Saved
-        </div>
-
-        {/* Collaborators */}
-        <div className="absolute bottom-4 left-5 flex items-center gap-2">
-          <Avatars names={['Lan', 'Minh', 'David']} />
-          <span className="text-[10px] text-slate-400">editing</span>
-        </div>
-
-        {/* Version history */}
-        <div className="absolute bottom-4 right-5 flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] text-slate-300">
-          <History size={12} className="text-[#A4B8CE]" />
-          Version History
-        </div>
-      </div>
-    </AppFrame>
+    <div className="relative h-full w-full overflow-hidden rounded-xl border border-white/10 bg-white shadow-lg">
+      <Image
+        src="/zoho-writer-screenshot.png"
+        alt="Giao diện thật của Zoho Writer đang chỉnh sửa tài liệu"
+        fill
+        className="object-cover object-top"
+      />
+    </div>
   )
 }
 
