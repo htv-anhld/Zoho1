@@ -8,9 +8,6 @@ import {
   Presentation,
   HardDrive,
   Users,
-  BarChart3,
-  LineChart,
-  Cloud,
   Play,
   Circle,
 } from 'lucide-react'
@@ -90,97 +87,15 @@ function WriterPreview() {
 /* ---------- STATE 2: Zoho Sheet ---------- */
 
 function SheetPreview() {
-  const bars = [40, 65, 50, 80, 60, 90]
   return (
-    <AppFrame>
-      <div className="flex items-center justify-between border-b border-white/10 bg-white/[0.03] px-4 py-2.5">
-        <div className="flex items-center gap-4">
-          <TrafficDots />
-          <span className="text-[11px] font-medium text-slate-300">Revenue Dashboard</span>
-        </div>
-        <span className="hidden rounded-full bg-[#374B6B] px-2.5 py-1 text-[10px] font-semibold text-white sm:inline">
-          5 collaborators
-        </span>
-      </div>
-
-      {/* Formula bar */}
-      <div className="flex items-center gap-2 border-b border-white/10 bg-white/[0.02] px-4 py-1.5 text-[10px] text-slate-400">
-        <span className="rounded bg-white/10 px-1.5 py-0.5 font-mono">B4</span>
-        <span className="font-mono">=SUM(B2:B3)*1.12</span>
-      </div>
-
-      <div className="relative flex flex-1 gap-3 overflow-hidden p-4">
-        {/* Grid */}
-        <div className="w-1/2">
-          <div className="grid grid-cols-3 overflow-hidden rounded-md text-[10px] ring-1 ring-white/10">
-            {Array.from({ length: 18 }).map((_, i) => {
-              const header = i < 3
-              const highlight = i === 7 || i === 13
-              return (
-                <div
-                  key={i}
-                  className={`border-b border-r border-white/5 px-2 py-1.5 ${
-                    header
-                      ? 'bg-white/10 font-semibold text-slate-200'
-                      : highlight
-                        ? 'bg-emerald-500/15 text-emerald-300'
-                        : 'text-slate-400'
-                  }`}
-                >
-                  {header ? ['Qtr', 'Rev', '+%'][i] : highlight ? '▲' : '—'}
-                </div>
-              )
-            })}
-          </div>
-          <div className="mt-2 inline-flex rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[9px] text-[#A4B8CE]">
-            Pivot Table
-          </div>
-        </div>
-
-        {/* Charts */}
-        <div className="flex w-1/2 flex-col gap-3">
-          <div className="rounded-md bg-white/[0.04] p-2 ring-1 ring-white/5">
-            <div className="mb-1 flex items-center gap-1 text-[9px] text-slate-400">
-              <BarChart3 size={10} /> Bar
-            </div>
-            <div className="flex h-12 items-end gap-1">
-              {bars.map((h, i) => (
-                <div
-                  key={i}
-                  className="flex-1 origin-bottom rounded-sm bg-gradient-to-t from-[#374B6B] to-[#A4B8CE] transition-all duration-500"
-                  style={{ height: `${h}%` }}
-                />
-              ))}
-            </div>
-          </div>
-          <div className="rounded-md bg-white/[0.04] p-2 ring-1 ring-white/5">
-            <div className="mb-1 flex items-center gap-1 text-[9px] text-slate-400">
-              <LineChart size={10} /> Line
-            </div>
-            <svg viewBox="0 0 100 40" className="h-10 w-full">
-              <polyline
-                points="0,32 20,26 40,30 60,14 80,18 100,6"
-                fill="none"
-                stroke="#A4B8CE"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
-        </div>
-
-        {/* Status */}
-        <div className="absolute left-4 top-2 flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2 py-1 text-[10px] text-emerald-300">
-          <Circle size={7} className="fill-emerald-400 text-emerald-400" />
-          Updated just now
-        </div>
-
-        {/* Cloud sync chip */}
-        <div className="absolute bottom-3 right-4 flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] text-slate-300">
-          <Cloud size={12} className="text-[#A4B8CE]" />
-          Cloud Sync Enabled
-        </div>
-      </div>
-    </AppFrame>
+    <div className="relative h-full w-full overflow-hidden rounded-xl border border-white/10 bg-white shadow-lg">
+      <Image
+        src="/zoho-sheet-screenshot.png"
+        alt="Giao diện thật của Zoho Sheet với bảng danh sách công việc và biểu đồ"
+        fill
+        className="object-cover object-top"
+      />
+    </div>
   )
 }
 
