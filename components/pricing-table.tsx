@@ -143,10 +143,10 @@ export default function PricingTable() {
                   {plan.name}
                 </h3>
                 <div className="mt-4 flex items-baseline gap-1.5">
-                  <span className={`font-heading font-extrabold tracking-tight text-primary ${plan.highlighted ? 'text-5xl' : 'text-4xl'}`}>
+                  <span className={`font-heading font-semibold tracking-tight text-primary/70 ${plan.highlighted ? 'text-5xl' : 'text-4xl'}`}>
                     {plan.price}
                   </span>
-                  <span className="text-sm font-medium text-muted-foreground">đ / người / tháng</span>
+                  <span className="text-sm font-normal text-muted-foreground/80">đ / người / tháng</span>
                 </div>
               </div>
 
