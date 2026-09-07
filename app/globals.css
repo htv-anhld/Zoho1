@@ -212,6 +212,22 @@
     animation: fadeUpDelay 1.2s ease-out;
   }
 
+  @keyframes arrowSlide {
+    0%,
+    100% {
+      transform: translateX(0);
+      opacity: 0.55;
+    }
+    50% {
+      transform: translateX(6px);
+      opacity: 1;
+    }
+  }
+
+  .animate-arrow-slide {
+    animation: arrowSlide 1.6s ease-in-out infinite;
+  }
+
   /* Utilities */
   .container {
     @apply w-full max-w-7xl mx-auto;

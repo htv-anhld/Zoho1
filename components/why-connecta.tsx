@@ -95,13 +95,13 @@ export default function WhyConnecta() {
         </div>
 
         {/* Customer Journey Timeline */}
-        <div className="animate-fade-up">
-          <h3 className="text-2xl font-bold text-foreground text-center mb-12 font-heading">
+        <div className="animate-fade-up rounded-3xl border border-primary/10 bg-gradient-to-br from-primary/[0.07] via-secondary/[0.06] to-background p-8 md:p-12 shadow-sm">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-12 font-heading">
             Hành trình triển khai Zoho Workplace cùng Connecta
           </h3>
-          <div className="flex items-center justify-between gap-4 overflow-x-auto pb-4">
+          <div className="flex items-start justify-between gap-4 overflow-x-auto pb-4">
             {journeySteps.map((step, idx) => (
-              <div key={idx} className="flex items-center gap-4 flex-shrink-0">
+              <div key={idx} className="flex items-start gap-4 flex-shrink-0">
                 <div className="group flex flex-col items-center cursor-default transition-transform duration-300 ease-out hover:-translate-y-1.5">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl md:text-3xl mb-4 shadow-md ring-4 ring-transparent transition-all duration-300 ease-out group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-xl group-hover:ring-secondary/25">
                     {idx + 1}
@@ -111,8 +111,13 @@ export default function WhyConnecta() {
                   </div>
                 </div>
                 {idx < journeySteps.length - 1 && (
-                  <div className="flex-shrink-0 hidden md:block">
-                    <ArrowRight size={28} className="text-primary/30" />
+                  <div className="flex-shrink-0 hidden md:flex h-16 md:h-20 items-center">
+                    <ArrowRight
+                      size={44}
+                      strokeWidth={2.5}
+                      className="text-primary animate-arrow-slide"
+                      style={{ animationDelay: `${idx * 0.25}s` }}
+                    />
                   </div>
                 )}
               </div>
