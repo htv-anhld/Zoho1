@@ -22,7 +22,7 @@ const plans: Plan[] = [
   {
     name: 'Mail Lite',
     label: 'Chỉ cần email công ty',
-    price: 'Liên hệ',
+    price: '27.000',
     rows: {
       mailbox: '5 GB hoặc 10 GB mỗi người',
       teamStorage: 'Không có',
@@ -36,7 +36,7 @@ const plans: Plan[] = [
     name: 'Workplace Standard',
     label: 'PHỔ BIẾN NHẤT',
     highlighted: true,
-    price: 'Liên hệ',
+    price: '81.000',
     rows: {
       mailbox: '30 GB mỗi người',
       teamStorage: '100 GB cho nhóm 3–10 người, thêm 10 GB mỗi người tiếp theo',
@@ -49,7 +49,7 @@ const plans: Plan[] = [
   {
     name: 'Workplace Professional',
     label: 'Cho nhu cầu cao',
-    price: 'Liên hệ',
+    price: '162.000',
     rows: {
       mailbox: '100 GB mỗi người, cộng 100 GB lưu trữ dự phòng',
       teamStorage: '1 TB cho nhóm 3–10 người, thêm 100 GB mỗi người tiếp theo',
