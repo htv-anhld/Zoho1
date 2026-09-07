@@ -7,9 +7,6 @@ import {
   Table2,
   Presentation,
   HardDrive,
-  Users,
-  Play,
-  Circle,
 } from 'lucide-react'
 import { CTAButton } from './cta-button'
 
@@ -49,26 +46,6 @@ const features: {
   },
 ]
 
-/* ---------- Shared dark-app chrome ---------- */
-
-function AppFrame({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex h-full w-full flex-col overflow-hidden rounded-xl border border-white/10 bg-[#0e141d]/95 text-slate-200 shadow-2xl backdrop-blur-sm">
-      {children}
-    </div>
-  )
-}
-
-function TrafficDots() {
-  return (
-    <div className="flex items-center gap-1.5">
-      <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />
-      <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
-      <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
-    </div>
-  )
-}
-
 /* ---------- STATE 1: Zoho Writer ---------- */
 
 function WriterPreview() {
@@ -103,70 +80,14 @@ function SheetPreview() {
 
 function ShowPreview() {
   return (
-    <AppFrame>
-      <div className="flex items-center justify-between border-b border-white/10 bg-white/[0.03] px-4 py-2.5">
-        <div className="flex items-center gap-4">
-          <TrafficDots />
-          <span className="flex items-center gap-1.5 text-[10px] text-rose-300">
-            <Circle size={7} className="fill-rose-400 text-rose-400" />
-            Live Presentation
-          </span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="hidden items-center gap-1 rounded-full bg-[#374B6B] px-2.5 py-1 text-[10px] font-semibold text-white sm:inline-flex">
-            <Users size={11} /> 12 viewers
-          </span>
-          <button className="flex items-center gap-1 rounded-md bg-[#A4B8CE] px-2.5 py-1 text-[10px] font-bold text-[#0e141d] shadow-[0_0_12px_rgba(164,184,206,0.5)]">
-            <Play size={11} className="fill-[#0e141d]" />
-            Present
-          </button>
-        </div>
-      </div>
-
-      <div className="relative flex flex-1 gap-3 overflow-hidden p-4">
-        {/* Slides sidebar */}
-        <div className="flex w-14 flex-col gap-2">
-          {[0, 1, 2, 3].map((i) => (
-            <div
-              key={i}
-              className={`aspect-video rounded ${
-                i === 1
-                  ? 'bg-[#374B6B] ring-2 ring-[#A4B8CE]'
-                  : 'bg-white/[0.06] ring-1 ring-white/10'
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Canvas */}
-        <div className="flex flex-1 flex-col justify-center rounded-lg bg-gradient-to-br from-[#374B6B]/40 to-[#0e141d] p-5 ring-1 ring-white/10">
-          <h4 className="text-balance text-base font-bold text-white">
-            Digital Transformation Strategy
-          </h4>
-          <div className="mt-4 flex items-end gap-1.5">
-            {[30, 55, 45, 75, 90].map((h, i) => (
-              <div
-                key={i}
-                className="w-4 origin-bottom rounded-sm bg-[#A4B8CE]/80 transition-all duration-500"
-                style={{ height: `${h * 0.5}px` }}
-              />
-            ))}
-            <div className="ml-3 flex-1">
-              <div className="flex items-center gap-1 text-[9px] text-slate-300">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#A4B8CE]" /> 2024
-                <span className="ml-2 h-1.5 w-1.5 rounded-full bg-[#374B6B]" /> 2026
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Ready badge */}
-        <div className="absolute bottom-3 right-4 flex items-center gap-1.5 rounded-full border border-white/10 bg-emerald-500/15 px-2.5 py-1 text-[10px] text-emerald-300">
-          <Circle size={7} className="fill-emerald-400 text-emerald-400" />
-          Ready to Present
-        </div>
-      </div>
-    </AppFrame>
+    <div className="relative h-full w-full overflow-hidden rounded-xl border border-white/10 bg-white shadow-lg">
+      <Image
+        src="/zoho-show-screenshot.png"
+        alt="Giao diện thật của Zoho Show với thư viện mẫu bài trình chiếu"
+        fill
+        className="object-cover object-top"
+      />
+    </div>
   )
 }
 
