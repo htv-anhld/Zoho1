@@ -8,12 +8,7 @@ interface ComparisonRow {
   connecta: string
 }
 
-const comparisonRows: ComparisonRow[] = [
-  {
-    criterion: 'Migration dữ liệu',
-    zoho: 'Người dùng tự thực hiện hoặc làm việc với đội ngũ quốc tế.',
-    connecta: 'Connecta hỗ trợ chuyển đổi Email, Drive và Danh bạ từ Google Workspace hoặc Microsoft 365 sang Zoho Workplace mà không làm gián đoạn hoạt động.',
-  },
+  const comparisonRows: ComparisonRow[] = [
   {
     criterion: 'Hỗ trợ kỹ thuật',
     zoho: 'Chủ yếu làm việc qua hệ thống hỗ trợ toàn cầu.',
