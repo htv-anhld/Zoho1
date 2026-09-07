@@ -10,7 +10,7 @@ import {
 } from 'lucide-react'
 import { CTAButton } from './cta-button'
 
-type AppKey = 'writer' | 'sheet' | 'show'
+type AppKey = 'writer' | 'sheet' | 'show' | 'workdrive'
 
 const features: {
   key: AppKey
@@ -91,6 +91,19 @@ function ShowPreview() {
   )
 }
 
+function WorkDrivePreview() {
+  return (
+    <div className="relative h-full w-full overflow-hidden rounded-xl border border-white/10 bg-white shadow-lg">
+      <Image
+        src="/zoho-workdrive-screenshot.png"
+        alt="Giao diện thật của Zoho WorkDrive với danh sách tệp và nhãn"
+        fill
+        className="object-cover object-top"
+      />
+    </div>
+  )
+}
+
 /* ---------- Section ---------- */
 
 export default function OfficeSuite() {
@@ -100,6 +113,7 @@ export default function OfficeSuite() {
     writer: <WriterPreview />,
     sheet: <SheetPreview />,
     show: <ShowPreview />,
+    workdrive: <WorkDrivePreview />,
   }
 
   return (
@@ -139,7 +153,7 @@ export default function OfficeSuite() {
 
               {/* Live app preview inside the monitor */}
               <div className="absolute inset-0 p-3 md:p-4">
-                {(['writer', 'sheet', 'show'] as AppKey[]).map((key) => (
+                {(['writer', 'sheet', 'show', 'workdrive'] as AppKey[]).map((key) => (
                   <div
                     key={key}
                     aria-hidden={active !== key}
@@ -197,9 +211,31 @@ export default function OfficeSuite() {
             })}
 
             {/* Zoho WorkDrive Box */}
-            <div className="rounded-2xl border border-transparent p-4 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300">
+            <div
+              role="button"
+              tabIndex={0}
+              aria-pressed={active === 'workdrive'}
+              onMouseEnter={() => setActive('workdrive')}
+              onFocus={() => setActive('workdrive')}
+              onClick={() => setActive('workdrive')}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  setActive('workdrive')
+                }
+              }}
+              className={`cursor-pointer rounded-2xl border p-4 transition-all duration-300 ${
+                active === 'workdrive'
+                  ? 'border-primary bg-primary/5 shadow-sm'
+                  : 'border-transparent hover:border-primary/40 hover:bg-primary/5'
+              }`}
+            >
               <div className="flex items-center gap-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center">
+                <div
+                  className={`flex-shrink-0 w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center transition-transform duration-300 ${
+                    active === 'workdrive' ? 'scale-110' : ''
+                  }`}
+                >
                   <HardDrive size={28} className="text-primary" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground">Zoho WorkDrive</h3>
